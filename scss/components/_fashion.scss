@@ -1,0 +1,57 @@
+.fashion{
+    padding-bottom: 30px;
+    position: relative;
+    h2{
+        margin-bottom: 20px;
+        border-bottom: solid 2px #eb3e32 ;
+        a{
+            text-transform: uppercase;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            display: inline-block;
+            line-height: 40px;
+            font-size: 20px;
+            padding: 0 20px 0 10px;
+            font-weight: bold;
+            color: #fff;
+            background: #eb3e32;
+        }
+    }
+    ul{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 2px;
+        height: 37px;
+        line-height: 36px;
+        font-weight: bold;
+        margin: 0;
+        padding-right: 10px;
+        li{
+            display: inline-block;
+            margin-right: 24px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            a{
+                color: #323c42;
+                &:hover{
+                    color:#ffb416;
+                }
+            }
+        }
+    }
+    &__sub{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__picture{
+        width: 41.6667%;
+    }
+    &__right-example{
+        margin: 0;
+        form{
+            width: 100%;
+        }
+    }
+}

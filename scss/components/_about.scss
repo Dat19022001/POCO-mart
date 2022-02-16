@@ -1,0 +1,32 @@
+.about{
+    padding: 20px 0;
+    display: flex;
+    &__example{
+        display: inline-block;
+        text-align: center;
+        width: 119px;
+        margin-right: 5px;
+        a{
+            display: block;
+            margin-bottom: 5px;
+            color: #323c42;
+            &:hover{
+                img{
+                    transform: rotate(45deg);
+                    transition: all 0.5s;
+                }
+            }
+        }
+        h4{
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19px;
+            padding: 0 10px;
+            a{
+                &:hover{
+                    color: #ffb416;
+                }
+            }
+        }
+    }
+}
