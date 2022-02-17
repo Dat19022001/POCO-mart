@@ -321,7 +321,7 @@
   display: flex !important;
 }
 
-.prev-arrow {
+.next-arrow {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
@@ -334,13 +334,13 @@
   border: none;
 }
 
-.prev-arrow:hover {
+.next-arrow:hover {
   opacity: 0.8;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.next-arrow {
+.prev-arrow {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
@@ -353,7 +353,7 @@
   border: none;
 }
 
-.next-arrow:hover {
+.prev-arrow:hover {
   opacity: 0.8;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;

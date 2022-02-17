@@ -15,7 +15,7 @@
     display: flex !important;
     
 }
-.prev-arrow{
+.next-arrow{
     &:hover{
         opacity: 0.8;
         transition: all 0.5s;
@@ -30,7 +30,7 @@
     border-radius: 50%;
     border: none;
 }
-.next-arrow{
+.prev-arrow{
     &:hover{
         opacity: 0.8;
         transition: all 0.5s;
