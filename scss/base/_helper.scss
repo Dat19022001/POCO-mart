@@ -120,14 +120,14 @@
             border-width: 20px 20px 0 0;
             border-color: #ffd004 transparent transparent transparent;
             position: absolute;
-            top: 35px;
+            top: 34px;
             left: 0;
         }
         >a{
             &::before{
                 content: "";
                 position: absolute;
-                top: 35px;
+                top: 34px;
                 left: 20px;
                 width: 0;
                 height: 0;
@@ -218,7 +218,7 @@
     
 }
 .ex{
-    width: 19.445%;
+    width: 19.44%;
     max-width: unset;
     padding: 0 10px 10px 10px;
 }

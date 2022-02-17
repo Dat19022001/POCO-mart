@@ -53,7 +53,7 @@
         padding-left: 50px;
         line-height: 20px;
         position: relative;
-        background-image: url(/assets/img/call.svg);
+        background-image: url(../assets/img/call.svg);
         background-position: 10px 6px;
         background-size: 30px;
         background-repeat:no-repeat;
@@ -71,7 +71,7 @@
         }
     }
     &__acount{
-        background-image: url(/assets/img/users.svg);
+        background-image: url(../assets/img/users.svg);
         a{
             font-size: 14px;
         }

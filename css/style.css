@@ -141,14 +141,14 @@
   border-width: 20px 20px 0 0;
   border-color: #ffd004 transparent transparent transparent;
   position: absolute;
-  top: 35px;
+  top: 34px;
   left: 0;
 }
 
 .sanpham__picture > a::before {
   content: "";
   position: absolute;
-  top: 35px;
+  top: 34px;
   left: 20px;
   width: 0;
   height: 0;
@@ -263,7 +263,7 @@
 }
 
 .ex {
-  width: 19.445%;
+  width: 19.44%;
   max-width: unset;
   padding: 0 10px 10px 10px;
 }
@@ -296,6 +296,60 @@
   list-style-type: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.slick-list {
+  width: 874px !important;
+  height: 279px !important;
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-transform: translate3d(306px, 0, 0) !important;
+          transform: translate3d(306px, 0, 0) !important;
+}
+
+.slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.prev-arrow {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  right: -34%;
+  top: 44%;
+  border-radius: 50%;
+  border: none;
+}
+
+.prev-arrow:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.next-arrow {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  left: 34.9%;
+  top: 44%;
+  border-radius: 50%;
+  border: none;
+}
+
+.next-arrow:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .slider {
@@ -441,6 +495,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.mobile__sub-example {
+  width: 186px !important;
 }
 
 .swap {
@@ -645,7 +703,7 @@
 
 .contact__sub::after {
   content: "";
-  background: url(/assets/img/mblike.png) no-repeat;
+  background: url(../assets/img/mblike.png) no-repeat;
   position: absolute;
   top: -6px;
   right: -6px;
@@ -737,7 +795,7 @@
   padding-left: 50px;
   line-height: 20px;
   position: relative;
-  background-image: url(/assets/img/call.svg);
+  background-image: url(../assets/img/call.svg);
   background-position: 10px 6px;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -759,7 +817,7 @@
 }
 
 .header__acount {
-  background-image: url(/assets/img/users.svg);
+  background-image: url(../assets/img/users.svg);
 }
 
 .header__acount a {
