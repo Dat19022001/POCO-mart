@@ -308,6 +308,13 @@
           transform: translate3d(306px, 0, 0) !important;
 }
 
+.a > .slick-list {
+  height: 310px !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+          transform: translate3d(0, 0, 0) !important;
+  width: 491px !important;
+}
+
 .slick-track {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
