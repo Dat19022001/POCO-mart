@@ -3,45 +3,53 @@
     height: 279px !important;
     display: inline-flex !important;
     transform: translate3d(306px, 0, 0) !important;
+    @media (max-width:767px) {
+        width: 386px !important;
+        transform: translate3d(10px, 0, 0) !important;
+    }
 }
 .a{
     >.slick-list{
         height: 310px !important;
         transform: translate3d(0, 0, 0) !important;
         width: 491px !important;
+        @media (max-width:767px) {
+            height: 280px !important;
+            width: 404px !important;
+            transform: translate3d(0px, 0, 0) !important;
+        }
     }
 }
 .slick-track{
     display: flex !important;
     
 }
-.next-arrow{
-    &:hover{
+.slick-slider{
+    &:hover .next-arrow {
         opacity: 0.8;
-        transition: all 0.5s;
+        transition: all 1s;
     }
-    transition: all 0.5s;
-    opacity: 0;
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
+    &:hover .prev-arrow {
+        opacity: 0.8;
+        transition: all 1s;
+    }
+}
+.next-arrow{  
     right: -34%;
     top: 44%;
-    border-radius: 50%;
-    border: none;
 }
 .prev-arrow{
-    &:hover{
-        opacity: 0.8;
-        transition: all 0.5s;
-    }
-    transition: all 0.5s;
-    opacity: 0;
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
     left: 34.9%;
     top: 44%;
+}
+.slide-arrow{
+    transition: all 3s;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
     border-radius: 50%;
     border: none;
+    @media (max-width:767px) {
+        display: none !important;
+    }
 }

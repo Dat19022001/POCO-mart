@@ -29,4 +29,16 @@
             }
         }
     }
+    @media (max-width:767px) {
+        display: none;
+        &__example{
+            width: 127px;
+        }
+    }
+}
+.c{
+    display: none;
+    @media (max-width:767px) {
+        display: block;
+    }
 }

@@ -43,4 +43,13 @@
             width: 100%;
         }
     }   
+    @media (max-width:767px) {
+        &__right-example{
+            width:50%;
+            margin: 0;
+            &:nth-last-child(1){
+                display: none;
+            }
+        }
+    }
 }

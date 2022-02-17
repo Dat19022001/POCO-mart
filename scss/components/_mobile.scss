@@ -59,4 +59,17 @@
     &__sub-example{
         width: 186px !important;
     }
+    @media (max-width:767px) {
+        &__menu{
+            >li{
+                width: 50%;
+                &:nth-last-child(1){
+                    display: none;
+                }
+            }
+        }
+        &__sub-left{
+            display: none;
+        }
+    }
 }
