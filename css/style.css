@@ -471,7 +471,8 @@
     display: none;
   }
   .about__example {
-    width: 31%;
+    width: 32%;
+    margin-right: 0;
   }
 }
 
