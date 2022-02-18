@@ -317,9 +317,9 @@
 
 @media (max-width: 767px) {
   .slick-list {
-    width: 386px !important;
-    -webkit-transform: translate3d(10px, 0, 0) !important;
-            transform: translate3d(10px, 0, 0) !important;
+    width: 97% !important;
+    -webkit-transform: translate3d(5px, 0, 0) !important;
+            transform: translate3d(5px, 0, 0) !important;
   }
 }
 
@@ -333,7 +333,7 @@
 @media (max-width: 767px) {
   .a > .slick-list {
     height: 280px !important;
-    width: 404px !important;
+    width: 100% !important;
     -webkit-transform: translate3d(0px, 0, 0) !important;
             transform: translate3d(0px, 0, 0) !important;
   }
@@ -471,7 +471,7 @@
     display: none;
   }
   .about__example {
-    width: 127px;
+    width: 31%;
   }
 }
 
@@ -561,7 +561,7 @@
 }
 
 .mobile__sub-example {
-  width: 186px !important;
+  width: 100% !important;
 }
 
 @media (max-width: 767px) {
@@ -573,6 +573,13 @@
   }
   .mobile__sub-left {
     display: none;
+  }
+  .mobile__sub-example {
+    width: 100% !important;
+    padding: 10px 5px;
+  }
+  .mobile__sub-right {
+    width: 100%;
   }
 }
 
@@ -691,8 +698,9 @@
     max-width: 100%;
   }
   .swap__right-example {
-    width: 49.5%;
+    width: 49%;
     margin: 0;
+    padding: 5px 5px 0 5px;
   }
 }
 
@@ -967,7 +975,6 @@
 }
 
 .header__count {
-  position: relative;
   padding: 0 10px;
 }
 
@@ -1022,8 +1029,15 @@
     margin: 0;
   }
   .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     padding-left: 15px;
     max-width: 50%;
+  }
+  .header__logo img {
+    width: 100%;
+    height: auto;
   }
   .header__support {
     -webkit-box-ordinal-group: 3;
@@ -1050,8 +1064,14 @@
     height: auto;
   }
   .header__count {
-    width: 50%;
-    margin-left: 7px;
+    max-width: 50%;
+    margin-left: 10px;
+  }
+  .header__count ul li {
+    margin-right: 23px;
+  }
+  .header__count ul li:nth-last-child(1) {
+    margin: 0;
   }
   .header__acount {
     display: none;
@@ -1451,8 +1471,8 @@
   .footer__child-1 {
     width: 100%;
   }
-  .footer__child-1:nth-last-child(1) {
-    padding-bottom: 110px;
+  .footer__hr {
+    display: none;
   }
   .footer__end {
     display: none;

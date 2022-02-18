@@ -4,8 +4,8 @@
     display: inline-flex !important;
     transform: translate3d(306px, 0, 0) !important;
     @media (max-width:767px) {
-        width: 386px !important;
-        transform: translate3d(10px, 0, 0) !important;
+        width: 97% !important;
+        transform: translate3d(5px, 0, 0) !important;
     }
 }
 .a{
@@ -15,7 +15,7 @@
         width: 491px !important;
         @media (max-width:767px) {
             height: 280px !important;
-            width: 404px !important;
+            width: 100% !important;
             transform: translate3d(0px, 0, 0) !important;
         }
     }

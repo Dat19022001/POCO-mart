@@ -136,9 +136,9 @@
         }
         &__child-1{
             width: 100%;
-            &:nth-last-child(1){
-                padding-bottom: 110px;
-            }
+        }
+        &__hr{
+            display: none;
         }
         &__end{
            display: none;
