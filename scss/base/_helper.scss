@@ -3,6 +3,10 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    @media screen and (max-width:1180px) {
+        max-width: 100%;
+        padding: 0 5px;
+    }
     @media (max-width:767px) {
         max-width: 100%;
         padding: 0 5px;
@@ -71,16 +75,14 @@
     padding: 10px 10px 0 10px;
     background-color: #fff;
     &:hover &__action{
-        display: block;
         transform: scale(1);
-        transition: all 1s;
+        transition: all ease 0.3s;
     }
     &:hover &__action-cart{
         background-color: #eb3e32;
         color: #fff;
         border-radius: 6px;
         transform: scale(1);
-        transition: all 1s;
     }
     &:hover{
         img{
@@ -143,7 +145,8 @@
         }
     }
     &__action{
-        display: none;
+        transform: scale(0);
+        transition: all ease 0.3s;
         text-align: center;
         height: 70px;
         width: 30px;
@@ -185,6 +188,19 @@
                 }
             }
         }
+        del{
+            position: relative;
+            opacity: 0.5;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: black;
+                top: 50%;
+                right: 0;
+            }
+        }
         span{
             display: block;
         }
@@ -203,6 +219,7 @@
     }
     &__action-cart{
         position: absolute;
+        transition: all ease 0.3s;
         bottom: 9px;
         right: 0;
         a{
@@ -241,4 +258,21 @@
 }
 .youtube{
     color:#DC4A38 ;
+}
+.click{
+    display: none !important;
+}
+.mobile__sub-right.active{
+    display: block !important;
+    transition: all ease 0.3s;
+
+}
+.active{
+    background:#ed4e2e !important;
+    >h4{
+        color:#fff
+    }
+    >p{
+        color:#fff
+    }
 }

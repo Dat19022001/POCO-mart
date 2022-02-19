@@ -68,6 +68,20 @@
             width: 100%;
         }
     }
+    @media screen and (max-width:1180px) {
+        ul{
+            display: inline;
+            li{
+                font-size: 14px;
+            }
+        }
+        &__left{
+            display: none;
+        }
+        &__right{
+            max-width: 100%;
+        }
+    }
     @media (max-width:767px) {
         ul{
             display: none;

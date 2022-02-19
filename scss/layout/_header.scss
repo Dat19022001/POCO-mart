@@ -1,6 +1,6 @@
 .header{
     margin: 0 -10px;
-    padding: 10px 0;
+    width: 100%;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -16,12 +16,14 @@
     }
     &__support{
         padding: 0 10px;
-        flex: 0 0 58.33333%;
-        max-width: 58.333%;
-        display: flex;
+        flex: 0 0 56.33333%;
+        max-width: 56.333%;
+        width: 56.333%;
         margin-top: 8px;
+        display: inherit;
     }
     &__search{
+        display: inline-block;
         width: 340px;
         height: 42px;
         position: relative;
@@ -49,6 +51,7 @@
         font-size: 21px;
     }
     &__hotline{
+        display: inline-block;
         margin-left: 10px;
         padding-left: 50px;
         line-height: 20px;
@@ -116,6 +119,17 @@
             font-size: 14px;
         }
     }
+    @media screen and (max-width:1180px) {
+        &__logo{
+            flex: 0 0 17.667%;
+            max-width: 17.667%;
+        }
+        &__support{
+            flex: 0 0 62.333%;
+            max-width: 62.333%;
+            width: 62.333%;
+        }
+    }
     @media (max-width:767px){
         margin: 0;
         &__logo{
@@ -175,6 +189,7 @@
     }
 }
 .menu{
+    padding: 0 10px;
     background-color: #eb3e32;
     height: 42px;
     &__nav{
@@ -184,10 +199,12 @@
     &__nav1{
         width: 280px;
         &:hover .menu__nav1sub{
-            display:block;
+            opacity: 1;
             max-width: 3000px;
             max-height: 3000px;
-            overflow: visible;
+            visibility: visible;
+            transform: perspective(600px) rotateX(0deg);
+            transition: transform 0.5s ease, opacity 0.2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
         }
     }
     &__title{
@@ -233,11 +250,15 @@
         }
     }
     &__nav1sub{
-        display: none;
+        opacity: 0;
+        max-width: 0;
+        max-height: 0;
+        transform: perspective(600px) rotateX(-90deg);
+        visibility: hidden;
         width: 273px;
         transform-origin: 0% 0%;
         position: relative;
-        top: 0px;
+        top: 0;
         z-index: 99;
         left: 0;
     }
@@ -251,8 +272,7 @@
         }
     }
     &__lv2{
-        display:none;
-        min-height: 363.75px;
+        display: none;
         position: absolute;
         left: 273px;
         width: 907px;
@@ -286,16 +306,16 @@
         width: calc(100% - 280px);
     }
     &__nav22{
-        display: flex;
+        display: inherit;
     }
     &__lv11{
+        display: inline-block;
         position: relative;
         height: 42px;
-        margin-right: 5px;
         >a{
             display: inline-block;
             height: 42px;
-            padding-right: 20px;
+            padding-right: 15px;
             font-size: 17px;
             color: #fff;
             span{
@@ -307,11 +327,21 @@
             }
         }
         &:hover .menu__lv22{
-            display: block;
+            opacity: 1;
+                max-width: 3000px;
+                max-height: 3000px;
+                visibility: visible;
+                transform: perspective(600px) rotateX(0deg);
+                transition: transform 0.5s ease, opacity 0.2s ease, max-height 0s step-end, max-width 0s step-end, padding 0s step-end;
         }       
     }
     &__lv22{
-        display: none;
+        opacity: 0;
+        max-width: 0;
+        max-height: 0;
+        transform: perspective(600px) rotateX(-90deg);
+        visibility: visible;
+        transform-origin: 0% 0%;
         position: absolute;
         top: 99%;
         left: 0px;
@@ -347,6 +377,13 @@
             &:hover ul{
                 display: block;
             } 
+        }
+    }
+    @media screen and (max-width:1180px) {
+        &__lv11{
+            >a{
+                margin-left: 6px;
+            }
         }
     }
     @media (max-width:767px) {

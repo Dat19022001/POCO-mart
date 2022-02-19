@@ -65,7 +65,7 @@
                     <li>
                         <div class="header__icon">
                             <a href="#" title="So sánh Sản Phẩm">
-                                <i class="fas fa-exchange-alt"></i>
+                                <i class="fa-solid fa-shuffle"></i>
                                 <span>0</span>
                             </a>
                         </div>
@@ -135,9 +135,12 @@
                            <li ><a class="item" style="background-image: url(./assets/img/icon7.png);" href="#" title="Trang sức - Sành điệu">Trang sức - Sành điệu</a></li>
                            <li ><a class="item" style="background-image: url(./assets/img/icon8.png);" href="#" title="Thời trang - Làm đẹp">Thời trang - Làm đẹp</a></li>
                            <li ><a class="item" style="background-image: url(./assets/img/icon9s.png);" href="#" title="Nhà cửa đời sống">Nhà cửa đời sống</a></li>
-                           <li ><a class="item" style="background-image: url(./assets/img/icon10.png);display:none" href="#" title="Sách - Tiểu thuyết">Sách - Tiểu thuyết</a></li>
-                           <li ><a class="item" style="background-image: url(./assets/img/plus.svg);display:none"  href="#">Xem thêm</a></li>
-                           <li><a class="item" style="background-image: url(./assets/img/minus.svg);" href="#">Thu gọn</a></li>
+                           <li class="click menu__tab">
+                                <a class="item" style="background-image: url(./assets/img/icon10.png);" href="#" title="Sách - Tiểu thuyết">Sách - Tiểu thuyết</a>
+                                <a class="item" style="background-image: url(./assets/img/minus.svg);" href="#">Thu gọn</a>
+                           </li>
+                           <li class="menu__tab" ><a class="item" style="background-image: url(./assets/img/plus.svg);"  href="#">Xem thêm</a></li>
+                          
                         </ul>
                     </div>
                 </div>
@@ -145,10 +148,10 @@
                     <ul class="menu__nav22">
                         <li class="menu__lv11"><a href="#" title="Trang chủ"><span>Trang Chủ</span></a></li>
                         <li class="menu__lv11"><a href="#" title="Giới thiệu"><span>Giới Thiệu</span></a></li>
-                        <li class="menu__lv11" style="margin-right: 12px;">
+                        <li class="menu__lv11" >
                             <a href="#" title="Sản Phẩm">
                                 <span>Sản Phẩm</span>
-                                <i class="fa fa-caret-down" style="right: -1px; top: 0px; color:#fff; font-size:14px;line-height:42px"></i>
+                                <i class="fa fa-caret-down" style="display: contents;right: -7%; top: 0px; color:#fff; font-size:14px;line-height:42px"></i>
                             </a>        
                             <ul class="menu__lv22" >
                                 <li >
@@ -202,10 +205,10 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu__lv11" style="margin-right: 12px;">
+                        <li class="menu__lv11">
                             <a href="#" title="Tin Mới Nhất">
                                 <span>Tin Mới Nhất</span>
-                                <i class="fa fa-caret-down" style="right: -1px; top: 0px; color:#fff; font-size:14px;line-height:42px"></i>
+                                <i class="fa fa-caret-down" style="display: contents;right: -7%; top: 0px; color:#fff; font-size:14px;line-height:42px"></i>
                             </a>
                             <ul class="menu__lv22">
                                 <li >
@@ -326,24 +329,24 @@
             </div>
             <div class="mobile">
                 <ul class="mobile__menu">
-                    <li class="mobile__active">
-                        <h4 style="color:#fff">Điện thoại</h4>
-                        <p style="color:#fff">Giảm Ngay 1 Triệu Khi Mua Hàng Online</p>
+                    <li class="mobile__menu-1 active">
+                        <h4>Điện thoại</h4>
+                        <p>Giảm Ngay 1 Triệu Khi Mua Hàng Online</p>
                     </li>
-                    <li>
+                    <li class="mobile__menu-1 ">
                         <h4>Thời trang</h4>
                         <p>Giảm giá cực lớn lên tới 70%</p>
                     </li>
-                    <li>
+                    <li class="mobile__menu-1 ">
                         <h4>Gia Dụng</h4>
                         <p>Giá siêu ưu đãi lên tới 30%</p>
                     </li>
                 </ul>
                 <div class="mobile__sub">
                     <div class="mobile__sub-left">
-                        <a href="#"><img src="./assets/img/banner_1_tab.jpg" alt=""></a>
+                        <a href="#"><img src="./assets/img/banner_1_tab.jpg" alt="1"></a>
                     </div>
-                    <div class="mobile__sub-right">
+                    <div class="mobile__sub-right active" >
                         <div class="mobile__sub-example sanpham">
                                 <form action="#">
                                     <div class="mobile__sub-picture sanpham__picture" data-sale="Giảm 5%">
@@ -474,6 +477,268 @@
                                         <div class="mobile__sub-box sanpham__box">
                                             <span>22.000.000₫</span>
                                             <del>32.000.000₫</del>
+                                            <div class="sanpham__action-cart">
+                                                <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="mobile__sub-example"></div>
+                        <div class="mobile__sub-example"></div>
+                        <div class="mobile__sub-example"></div>
+                    </div>
+                    <div class="mobile__sub-right " >
+                        <div class="mobile__sub-example sanpham">
+                            <form action="#">
+                                <div class="mobile__right-picture sanpham__picture" data-sale="Giảm 61%">
+                                    <a href="#">
+                                        <img src="./assets/img/fashion/1.jpg" alt="1">
+                                    </a>
+                                    <div class="sanpham__action">
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="mobile__right-info sanpham__info">
+                                    <h3><a href="#" title="Kappa giày thể thao Nam/Nữ 001">Kappa giày thể thao Nam/Nữ 001</a></h3>
+                                    <div class="mobile__right-box sanpham__box">
+                                        <span>690.000₫</span>
+                                        <del>1.790.000₫</del>
+                                        <div class="sanpham__action-cart">
+                                            <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                            <form action="#">
+                                <div class="mobile__right-picture sanpham__picture" data-sale="Giảm 61%">
+                                    <a href="#">
+                                        <img src="./assets/img/fashion/2.jpg" alt="1">
+                                    </a>
+                                    <div class="sanpham__action">
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="mobile__right-info sanpham__info">
+                                    <h3><a href="#" title="Kappa giày thể thao Nam/Nữ 31169FW 001">Kappa giày thể thao Nam/Nữ 31169FW 001</a></h3>
+                                    <div class="mobile__right-box sanpham__box">
+                                        <span>690.000₫</span>
+                                        <del>1.790.000₫</del>
+                                        <div class="sanpham__action-cart">
+                                            <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                            <form action="#">
+                                <div class="mobile__right-picture sanpham__picture" data-sale="Giảm 61%">
+                                    <a href="#">
+                                        <img src="./assets/img/fashion/3.jpg" alt="1">
+                                    </a>
+                                    <div class="sanpham__action">
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="mobile__right-info sanpham__info">
+                                    <h3><a href="#" title="Kappa giày thể thao Nam/Nữ 3116Z2W A04">Kappa giày thể thao Nam/Nữ 3116Z2W A04</a></h3>
+                                    <div class="mobile__right-box sanpham__box">
+                                        <span>690.000₫</span>
+                                        <del>1.790.000₫</del>
+                                        <div class="sanpham__action-cart">
+                                            <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                            <form action="#">
+                                <div class="mobile__right-picture sanpham__picture" data-sale="Giảm 56%">
+                                    <a href="#">
+                                        <img src="./assets/img/fashion/4.jpg" alt="1">
+                                    </a>
+                                    <div class="sanpham__action">
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="mobile__right-info sanpham__info">
+                                    <h3><a href="#" title="Kappa giày thể thao Nam/Nữ 3116Z3W 001">Kappa giày thể thao Nam/Nữ 3116Z3W 001</a></h3>
+                                    <div class="mobile__right-box sanpham__box">
+                                        <span>690.000₫</span>
+                                        <del>1.790.000₫</del>
+                                        <div class="sanpham__action-cart">
+                                            <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                            <form action="#">
+                                <div class="mobile__right-picture sanpham__picture" data-sale="Giảm 56%">
+                                    <a href="#">
+                                        <img src="./assets/img/fashion/5.jpg" alt="1">
+                                    </a>
+                                    <div class="sanpham__action">
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="mobile__right-info sanpham__info">
+                                    <h3><a href="#" title="Giày thể thao Nam/Nữ 31169FW 001">Giày thể thao Nam/Nữ 31169FW 001</a></h3>
+                                    <div class="mobile__right-box sanpham__box">
+                                        <span>690.000₫</span>
+                                        <del>1.790.000₫</del>
+                                        <div class="sanpham__action-cart">
+                                            <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                            <form action="#">
+                                <div class="mobile__right-picture sanpham__picture" data-sale="Giảm 56%">
+                                    <a href="#">
+                                        <img src="./assets/img/fashion/6.jpg" alt="1">
+                                    </a>
+                                    <div class="sanpham__action">
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="mobile__right-info sanpham__info">
+                                    <h3><a href="#" title="Kappa giày thể thao Nam/Nữ 31169FW A04">Kappa giày thể thao Nam/Nữ 31169FW A04</a></h3>
+                                    <div class="mobile__right-box sanpham__box">
+                                        <span>790.000₫</span>
+                                        <del>1.790.000₫</del>
+                                        <div class="sanpham__action-cart">
+                                            <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mobile__sub-example"></div>
+                        <div class="mobile__sub-example"></div>
+                        <div class="mobile__sub-example"></div>
+                    </div>
+                    <div class="mobile__sub-right " >
+                        <div class="mobile__sub-example sanpham">
+                                <form action="#">
+                                    <div class="mobile__sub-picture sanpham__picture" data-sale="Giảm 5%">
+                                        <a href="#">
+                                            <img src="./assets/img/gia dung/1.jpg" alt="1">
+                                        </a>
+                                        <div class="sanpham__action">
+                                            <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="mobile__sub-info sanpham__info">
+                                        <h3><a href="#" title="Nồi cơm điện thông minh Bear SUBE015 DFB-B20A1">Nồi cơm điện thông minh Bear SUBE015 DFB-B20A1</a></h3>
+                                        <div class="mobile__sub-box sanpham__box">
+                                            <span>9.000.000₫</span>
+                                            <del>10.500.000₫</del>
+                                             <div class="sanpham__action-cart">
+                                                 <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                                <form action="#">
+                                    <div class="mobile__sub-picture sanpham__picture" data-sale="Giảm 5%">
+                                        <a href="#">
+                                            <img src="./assets/img/gia dung/2.jpg" alt="1">
+                                        </a>
+                                        <div class="sanpham__action">
+                                            <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="mobile__sub-info sanpham__info">
+                                        <h3><a href="#" title="Ấm siêu tốc 1.5L Bear ZDH-B15T1">Ấm siêu tốc 1.5L Bear ZDH-B15T1</a></h3>
+                                        <div class="mobile__sub-box sanpham__box">
+                                            <span>4.900.000₫</span>
+                                            <div class="sanpham__action-cart">
+                                                <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                                <form action="#">
+                                    <div class="mobile__sub-picture sanpham__picture"data-sale="Giảm 31%">
+                                        <a href="#">
+                                            <img src="./assets/img/gia dung/3.png" alt="1">
+                                        </a>
+                                        <div class="sanpham__action">
+                                            <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="mobile__sub-info sanpham__info">
+                                        <h3><a href="#" title="Máy xay ăn dặm 0.3L Bear QSJ-A01F2 (GR-B03V2)">Máy xay ăn dặm 0.3L Bear QSJ-A01F2 (GR-B03V2)</a></h3>
+                                        <div class="mobile__sub-box sanpham__box">
+                                            <span>890.000₫</span>
+                                            <del>1.000.000₫</del>
+                                            <div class="sanpham__action-cart">
+                                                <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                                <form action="#">
+                                    <div class="mobile__sub-picture sanpham__picture"data-sale="Giảm 20%">
+                                        <a href="#">
+                                            <img src="./assets/img/gia dung/4.png" alt="1">
+                                        </a>
+                                        <div class="sanpham__action">
+                                            <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="mobile__sub-info sanpham__info">
+                                        <h3><a href="#" title="Máy xay ăn dặm 3 cối Bear LLJ-C04J1 (GR-B03V1)">Máy xay ăn dặm 3 cối Bear LLJ-C04J1 (GR-B03V1)</a></h3>
+                                        <div class="mobile__sub-box sanpham__box">
+                                            <span>1.900.000₫</span>
+                                            <del>3.000.000₫</del>
+                                            <div class="sanpham__action-cart">
+                                                <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="mobile__sub-example sanpham">
+                                <form action="#">
+                                    <div class="mobile__sub-picture sanpham__picture"data-sale="Giảm 13%">
+                                        <a href="#">
+                                            <img src="./assets/img/gia dung/6.jpg" alt="1">
+                                        </a>
+                                        <div class="sanpham__action">
+                                            <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="mobile__sub-info sanpham__info">
+                                        <h3><a href="#" title="Máy xay ăn dặm 3 cối Bear LLJ-C04J1 (GR-B03V1)">Máy xay ăn dặm 3 cối Bear LLJ-C04J1 (GR-B03V1)</a></h3>
+                                        <div class="mobile__sub-box sanpham__box">
+                                            <span>900.000₫</span>
+                                            <del>1.500.000₫</del>
                                             <div class="sanpham__action-cart">
                                                 <a href="#"><i style="line-height: 0;" class="fas fa-th-large"></i></a>
                                             </div>

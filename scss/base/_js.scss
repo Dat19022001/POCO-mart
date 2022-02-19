@@ -3,6 +3,9 @@
     height: 279px !important;
     display: inline-flex !important;
     transform: translate3d(306px, 0, 0) !important;
+    @media screen and (max-width:1180px) {
+        width: 98% !important;
+    }
     @media (max-width:767px) {
         width: 97% !important;
         transform: translate3d(5px, 0, 0) !important;
@@ -13,9 +16,12 @@
         height: 310px !important;
         transform: translate3d(0, 0, 0) !important;
         width: 491px !important;
+        @media screen and (max-width:1180px) {
+            width: 100% !important;
+        }
         @media (max-width:767px) {
             height: 280px !important;
-            width: 100% !important;
+            width: 99% !important;
             transform: translate3d(0px, 0, 0) !important;
         }
     }
