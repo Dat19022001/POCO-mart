@@ -39,5 +39,25 @@ tab2.forEach((tab, index) => {
     content.classList.add('active')
   }
 });
+//dong mo menu
+const mobileMenu = a('.header__mobile');
+const Menu = a('.menu');
+const exitMenu = a('.menu__exit');
+
+const topMenu = Menu.clientTop;
+
+mobileMenu.onclick = function(){
+   var isClose = Menu.clientTop == 0;
+   if (isClose){
+     Menu.style.top = 0;
+   } 
+}
+exitMenu.onclick = function(){
+  var isClose = Menu.clientTop == 0;
+  if (isClose){
+    Menu.style.top = null;
+  } 
+}
+
 
 

@@ -1541,6 +1541,10 @@
   display: block;
 }
 
+.menu__exit {
+  display: none;
+}
+
 @media screen and (max-width: 1180px) {
   .menu__lv11 > a {
     margin-left: 0px;
@@ -1549,13 +1553,119 @@
 
 @media screen and (max-width: 980px) {
   .menu {
+    max-width: 250px;
+    position: fixed;
+    top: -1000px;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+  .menu__r {
+    display: block !important;
+  }
+  .menu__nav {
+    display: block;
+  }
+  .menu__nav1 {
+    width: 100%;
+  }
+  .menu__title {
+    background-color: #eb3e32;
+  }
+  .menu__title::before {
     display: none;
   }
-}
-
-@media (max-width: 767px) {
-  .menu {
+  .menu__title span {
+    display: block;
+    padding-left: 0;
+    position: relative;
+  }
+  .menu__title span::before {
     display: none;
+  }
+  .menu__title span::after {
+    display: none;
+  }
+  .menu__nav1sub {
+    padding-left: 10px;
+    opacity: 1;
+    max-width: 3000px;
+    max-height: 3000px;
+    visibility: inherit;
+    left: -6%;
+    width: 100%;
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+  }
+  .menu__lv1 {
+    position: relative;
+    background-color: #fff;
+    width: 124.1%;
+    border-bottom: 1px solid;
+    left: -8%;
+  }
+  .menu__lv2 {
+    display: none;
+    position: relative;
+    left: 0;
+    width: 100%;
+    top: 0px;
+    margin-left: 0px;
+    background: #fff;
+    padding: 0px 0px 15px 16px;
+  }
+  .menu__lv2 li {
+    font-size: 14px;
+    padding: 0;
+    width: 100%;
+  }
+  .menu__lv2 li h4 {
+    font-size: 16px;
+  }
+  .menu__lv2 li a {
+    color: #323c42;
+  }
+  .menu__lv2 li a:hover {
+    color: #ffb416;
+  }
+  .menu__lv3 {
+    margin-bottom: 5px;
+  }
+  .menu__lv3 li {
+    padding-bottom: 6px;
+  }
+  .menu__nav2 {
+    width: 100%;
+  }
+  .menu__nav22 {
+    display: block;
+    width: 99%;
+    background-color: #fff;
+    position: absolute;
+    left: 0.5%;
+    padding-left: 15px;
+    z-index: 10;
+  }
+  .menu__lv11 {
+    display: block;
+  }
+  .menu__lv11 > a {
+    color: #323c42;
+  }
+  .menu__lv11 > a > i {
+    color: #323c42 !important;
+    display: block !important;
+    right: 1% !important;
+    font-size: 16px !important;
+  }
+  .menu__lv22 {
+    display: none;
+  }
+  .menu__exit {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 0;
   }
 }
 
