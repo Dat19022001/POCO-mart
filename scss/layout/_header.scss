@@ -1,10 +1,12 @@
 .header{
+    padding-top: 10px;
     margin: 0 -10px;
     width: 100%;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     &__logo{
+        display: flex;
         flex:0 0 25%;
         max-width: 25%;
         padding: 0 10px;
@@ -51,7 +53,7 @@
         font-size: 21px;
     }
     &__hotline{
-        display: inline-block;
+        display: grid;
         margin-left: 10px;
         padding-left: 50px;
         line-height: 20px;
@@ -62,9 +64,11 @@
         background-repeat:no-repeat;
         height: 40px;
         p{
+            display: inline-block;
             opacity: 0.8;
         }
         a{
+            display: inline-block;
             font-size: 18px;
             color: #eb3e32;
             font-weight: bold;
@@ -123,14 +127,69 @@
         &__logo{
             flex: 0 0 17.667%;
             max-width: 17.667%;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
         &__support{
-            flex: 0 0 62.333%;
-            max-width: 62.333%;
-            width: 62.333%;
+            flex: 0 0 63.333%;
+            max-width: 63.333%;
+            width: 63.333%;
         }
     }
-    @media (max-width:767px){
+    @media screen and (max-width:980px){
+        &__logo{
+            order: 2;
+            flex: 0 0 26.667%;
+            max-width: 26.667%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__support{
+            order: 3;
+            flex: 0 0 41.333%;
+            max-width: 41.333%;
+            width: 41.333%;
+        }
+        &__mobile{
+            display: block;
+            order: 1;
+            width: 6%;
+            a{
+                display: block;
+                text-align: center;
+                line-height: 61px;
+            }
+            img{
+                width: 25px;
+                height: auto;
+            }
+        }
+        &__acount{
+            display: none;
+        }
+        &__hotline{
+            display: none;
+        }
+        &__count{
+            order: 4;
+            width: 25%;
+            max-width: 25%;
+            ul{
+                text-align: center;
+                li{
+                    margin-right: 23px;
+                    &:nth-last-child(1){
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and  (max-width:767px){
         margin: 0;
         &__logo{
             width: 50%;
@@ -143,7 +202,7 @@
             }
         }
         &__support{
-            order: 2;
+            order: 3;
             flex: 0 0 81.3333%;
             width: 81.3333%;
             max-width: 81.3333%;
@@ -153,7 +212,7 @@
         }
         &__mobile{
             display: block;
-            order: 2;
+            order: 3;
             width: 17.667%;
             margin-top: 8px;
             a{
@@ -168,6 +227,7 @@
             }
         }
         &__count{
+            order: 2;
             width: 50%;
             max-width: 50%;
             ul{
@@ -382,9 +442,12 @@
     @media screen and (max-width:1180px) {
         &__lv11{
             >a{
-                margin-left: 6px;
+                margin-left: 0px;
             }
         }
+    }
+    @media screen and (max-width:980px) {
+        display: none;
     }
     @media (max-width:767px) {
         display: none;

@@ -31,8 +31,12 @@
             width: 100%;
         }
     }
-    @media (max-width:767px) {
+    @media screen and (max-width:980px) {
+        padding-top: 0px;
+    }
+    @media screen and  (max-width:767px) {
         &__picture{
+            padding-top: 10px;
             width: 100%;
             img{
                 border-radius: 10px;

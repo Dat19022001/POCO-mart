@@ -61,6 +61,11 @@
             }
         }
     }
+    @media screen and (max-width:980px) {
+        ul{
+            display: none;
+        }
+    }
     @media (max-width:767px) {
         ul{
             display: none;

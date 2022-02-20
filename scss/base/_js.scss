@@ -6,7 +6,7 @@
     @media screen and (max-width:1180px) {
         width: 98% !important;
     }
-    @media (max-width:767px) {
+    @media screen and  (max-width:767px) {
         width: 97% !important;
         transform: translate3d(5px, 0, 0) !important;
     }
@@ -18,9 +18,11 @@
         width: 491px !important;
         @media screen and (max-width:1180px) {
             width: 100% !important;
+            height:100% !important;
         }
+
         @media (max-width:767px) {
-            height: 280px !important;
+            height: 100% !important;
             width: 99% !important;
             transform: translate3d(0px, 0, 0) !important;
         }

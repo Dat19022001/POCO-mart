@@ -29,6 +29,9 @@
             }
         }
     }
+    @media screen and (max-width:980px) {
+        display: none;
+    }
     @media (max-width:767px) {
         display: none;
         &__example{
